@@ -16,10 +16,18 @@ def get_contestant_name(data, occupation)
   # code here
   name = " "
   data.each do |season, attributes|
+<<<<<<< HEAD
     attributes.each do |category|
       if category["occupation"] == occupation
         name = category["name"]
       end
+=======
+    attributes.each do |category, value|
+      binding.pry
+      #if attributes["occupation"] == occupation
+       # name = attributes["name"]
+      #end
+>>>>>>> c08ca382423c04f4582a8f7905d8b5dad54f657f
     end
   end
   name
